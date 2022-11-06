@@ -32,7 +32,7 @@ function getRecipesFromStorage() {
   else{
     return arrays;
   }
-  
+
 }
 
 /**
@@ -43,7 +43,7 @@ function getRecipesFromStorage() {
  * @param {Array<Object>} recipes An array of recipes
  */
 function addRecipesToDocument(recipes) {
-  // A10. TODO - Get a reference to the <main> element
+  //A10. TODO - Get a reference to the <main> element
   const main = document.querySelector('main');//fix getElementByname
   console.log(recipes.length);
   //const main = mainElement[0];
