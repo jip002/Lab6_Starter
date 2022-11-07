@@ -25,7 +25,9 @@ function getRecipesFromStorage() {
   //           header. It is possible in only a single line, but should
   //           be no more than a few lines.
   let arrays = JSON.parse(window.localStorage.getItem('recipes'));
-  console.log(arrays[0]);
+  if(arrays == null){
+    return [];
+  }
   return arrays;
 }
 
@@ -61,6 +63,7 @@ function saveRecipesToStorage(recipes) {
   // B1. TODO - Complete the functionality as described in this function
   //            header. It is possible in only a single line, but should
   //            be no more than a few lines.
+
 }
 
 /**
